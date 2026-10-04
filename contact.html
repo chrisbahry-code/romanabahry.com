@@ -42,12 +42,21 @@
 <main id="main">
   <div class="wrap page-head">
     <h1 class="page-title">Contact</h1>
-    <p class="lead">For enquiries about Professor Bahry’s work and publications, please write to her through her York University faculty profile.</p>
+    <p class="lead">For enquiries about Professor Bahry’s work and publications, please use the form below.</p>
   </div>
   <section class="wrap sided ruled" aria-labelledby="c1">
     <div class="side"><h2 class="side-head" id="c1">Write</h2></div>
     <div class="main">
-      <p class="after-list"><a href="https://profiles.laps.yorku.ca/profiles/rbahry/">York University faculty profile</a></p>
+      <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5dab8970-91b0-405e-84c5-8f6ee77e4cd4">
+        <input type="hidden" name="subject" value="Message from romanabahry.com">
+        <input type="hidden" name="redirect" value="https://romanabahry.com/thanks">
+        <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" aria-hidden="true">
+        <p><label for="n">Name</label><input id="n" name="name" type="text" autocomplete="name" required></p>
+        <p><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></p>
+        <p><label for="m">Message</label><textarea id="m" name="message" rows="7" required></textarea></p>
+        <p><button class="button" type="submit">Send</button></p>
+      </form>
     </div>
   </section>
   <section class="wrap sided ruled" aria-labelledby="c2">
