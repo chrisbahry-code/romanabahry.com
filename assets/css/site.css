@@ -135,6 +135,7 @@ a:hover { text-decoration-color: currentColor; }
 .opening { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gap); grid-template-areas: "post post post post post post post . portrait portrait portrait portrait" "lead lead lead lead lead lead lead . portrait portrait portrait portrait" "more more more more more more more . portrait portrait portrait portrait"; grid-template-rows: auto auto 1fr; margin-top: clamp(1.1rem, 3.2vw, 3rem); padding-bottom: var(--section); }
 .post { grid-area: post; font-size: var(--s-lead); font-style: italic; color: var(--slate); line-height: 1.25; }
 .opening .lead { grid-area: lead; margin-top: clamp(1.4rem, 3vw, 2.75rem); font-size: clamp(1.4375rem, 0.6rem + 1.75vw, 2.0625rem); line-height: 1.34; }
+.opening .lead p + p { margin-top: 0.8em; }
 .opening .more { grid-area: more; align-self: end; margin-top: clamp(1.25rem, 2vw, 1.75rem); }
 .lead { font-size: var(--s-lead); line-height: 1.36; }
 .portrait { grid-area: portrait; align-self: start; margin-top: 0.45rem; }
